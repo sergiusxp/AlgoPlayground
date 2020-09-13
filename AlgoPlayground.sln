@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30406.217
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlgoPlayground.Algorithms", "AlgoPlayground.Algorithms\AlgoPlayground.Algorithms.csproj", "{C258D877-C8EF-4F0E-96AE-9BBFBAFB54D3}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "AlgoPlayground.Shared", "AlgoPlayground.Shared\AlgoPlayground.Shared.shproj", "{ECA12697-88B6-45AE-BB4D-16CE447969A8}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		AlgoPlayground.Shared\AlgoPlayground.Shared.projitems*{c258d877-c8ef-4f0e-96ae-9bbfbafb54d3}*SharedItemsImports = 5
+		AlgoPlayground.Shared\AlgoPlayground.Shared.projitems*{eca12697-88b6-45ae-bb4d-16ce447969a8}*SharedItemsImports = 13
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C258D877-C8EF-4F0E-96AE-9BBFBAFB54D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C258D877-C8EF-4F0E-96AE-9BBFBAFB54D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C258D877-C8EF-4F0E-96AE-9BBFBAFB54D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C258D877-C8EF-4F0E-96AE-9BBFBAFB54D3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2513DB73-3419-4511-A280-6BD5E9E5B839}
+	EndGlobalSection
+EndGlobal
