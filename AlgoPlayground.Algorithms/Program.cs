@@ -19,7 +19,10 @@ namespace AlgoPlayground.Algorithms
                         "Remove duplicates",
                         "Find loop",
                         "Find the kth to last element",
-                        "Delete middle node"
+                        "Delete middle node",
+                        "Clone linked lists with arbitrary pointer but without buffer",
+                        "Clone linked lists with arbitrary pointer",
+                        "Intersection point"
                     }
                 }
             };
@@ -98,6 +101,41 @@ namespace AlgoPlayground.Algorithms
                         Console.WriteLine("List after");
                         LinkedListHelper.PrintList<int>(listWithoutMiddle);
 
+                        #endregion
+                        break;
+
+                    case 5:
+                        #region LL - Clone linked lists with arbitrary pointer but without buffer
+                        var arbList = Mocks.GetListArbitraryPointers();
+                        var clone = new Clone<int>();
+                        clone.SetList(arbList);
+
+                        Console.WriteLine("List before");
+                        LinkedListHelper.PrintList<int>(arbList);
+                        var cloned1 = clone.CloneListArbitraryWithNoBuffer();
+                        Console.WriteLine("List after");
+                        LinkedListHelper.PrintList<int>(cloned1);
+                        #endregion
+                        break;
+
+                    case 6:
+                        #region LL - Clone linked lists with arbitrary pointer
+                        var arbList2 = Mocks.GetListArbitraryPointers();
+                        var clone2 = new Clone<int>();
+                        clone2.SetList(arbList2);
+
+                        Console.WriteLine("List before");
+                        LinkedListHelper.PrintList<int>(arbList2);
+                        var cloned11 = clone2.CloneListArbitrary();
+                        Console.WriteLine("List after");
+                        LinkedListHelper.PrintList<int>(cloned11);
+
+                        #endregion
+                        break;
+
+                    case 7:
+                        #region LL - Intersection point
+                        new Intersect().IntersectPoint();
                         #endregion
                         break;
                 }

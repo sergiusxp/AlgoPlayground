@@ -37,5 +37,22 @@ namespace AlgoPlayground.Shared
 
             return list;
         }
+
+        public static MyLinkedListWithArbitraryPointer<int> GetListArbitraryPointers()
+        {
+            var lwap1 = new MyLinkedListWithArbitraryPointer<int>(1);
+            var lwap2 = new MyLinkedListWithArbitraryPointer<int>(2);
+            var lwap3 = new MyLinkedListWithArbitraryPointer<int>(3);
+            var lwap4 = new MyLinkedListWithArbitraryPointer<int>(4);
+            lwap1.Next = lwap2;
+            lwap2.Next = lwap3;
+            lwap3.Next = lwap4;
+            lwap1.Arbitrary = lwap4;
+            lwap2.Arbitrary = lwap3;
+            lwap4.Arbitrary = lwap3;
+            lwap3.Arbitrary = lwap1;
+
+            return lwap1;
+        }
     }
 }

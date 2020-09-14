@@ -14,4 +14,14 @@ namespace AlgoPlayground.Shared
         public T Data { get; set; }
         public MyLinkedList<T> Next { get; set; } = null;
     }
+
+    public class MyLinkedListWithArbitraryPointer<T> : MyLinkedList<T>
+    {
+        public MyLinkedListWithArbitraryPointer(T _data) : base(_data)
+        {
+        }
+
+        public MyLinkedListWithArbitraryPointer<T> Arbitrary { get; set; }
+        public new MyLinkedListWithArbitraryPointer<T> Next { get; set; }
+    }
 }

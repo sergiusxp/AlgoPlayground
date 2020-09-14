@@ -40,6 +40,18 @@ namespace AlgoPlayground.Shared.Helpers
             Console.Write("\n");
         }
 
+        public static void PrintList<T>(MyLinkedListWithArbitraryPointer<T> list)
+        {
+            MyLinkedListWithArbitraryPointer<T> cur = list;
+            Console.Write("Linked List values:\n");
+            while (cur != null)
+            {
+                Console.Write(cur.Data + " (" + cur.Arbitrary.Data + "), ");
+                cur = cur.Next;
+            }
+            Console.Write("\n");
+        }
+
         public static MyLinkedList<int> GetRandomLinkedListInt(int numberOfElements)
         {
             int index = 0;
